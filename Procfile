@@ -1,1 +1,1 @@
-web: gunicorn rizo.wsgi 
+web: python manage.py migrate; gunicorn rizo.wsgi 
