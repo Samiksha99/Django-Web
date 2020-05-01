@@ -135,5 +135,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 import dj_database_url 
-prod_db  =  dj_database_url.config(conn_max_age=500)
+prod_db  =  dj_database_url.config(default='postgres://gymjxcuuxbjoxp:2db2e620e61cbd374de6ac1b5266f1241441222a86bd363f2e30ddc4a6dfa4f3@ec2-18-235-20-228.compute-1.amazonaws.com:5432/daoljf8jg5vllq')
 DATABASES['default'].update(prod_db)
