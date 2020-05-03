@@ -83,7 +83,7 @@ DATABASES = {
         'NAME':'rizochem',
         'USER':'postgres',
         'PASSWORD':'quad_sas123',
-        'HOST':'localhost' 
+        'HOST':'rizochemapp.herokuapp.com' 
     }
 }
 
