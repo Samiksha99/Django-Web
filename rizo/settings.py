@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'rizo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.d17juu14of7kbv',
-        'NAME':'rizochem',
+        'NAME':'d17juu14of7kbv',
         'USER':'mlcntxocdrnxvo',
         'PASSWORD':'13ed078cc436033b71bcfbff2e7ce0ad85ac6eb57089da291ecd83042c183dae',
         'HOST':'ec2-3-216-129-140.compute-1.amazonaws.com',
