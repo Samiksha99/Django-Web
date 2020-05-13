@@ -25,13 +25,13 @@ For more details (https://github.com/nvie/pip-tools)
 
 Migrate, create a superuser, and run the server:
 
-*	python manage.py migrate
+>	python manage.py migrate
 
-*	python manage.py makemigrations {{cookiecutter.project_name}}
+>	python manage.py makemigrations {{cookiecutter.project_name}}
 
-*	python manage.py createsuperuser
+>	python manage.py createsuperuser
 
-*	python manage.py runserver
+>	python manage.py runserver
 
 **Setting up Heroku**
 Deployment to heroku requires a Procfile which is present in the main directory. This can always be changed on need basis.
