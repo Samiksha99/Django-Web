@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,16 +12,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
 
 
-  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="{% static 'css/aos.css' %}">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 
@@ -35,45 +36,45 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="#" class="js-logo-clone"><img src="images/RIZO-CHEM.png"></a>
+              <a href="#" class="js-logo-clone"><img src="{% static 'images/RIZO-CHEM.png' %}"></a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="/">Home</a></li>
 
                 <li class="has-children">
                   <a href="#">Products</a>
                   <ul class="dropdown">
-                    <li><a href="#">Allopathic Medicine</a></li>
-                    <li><a href="#">Ayurvedic Medicine</a></li>
-                    <li><a href="#">Pharmacy</a></li>
-                    <li><a href="#">Disposables</a></li>
-                    <li><a href="#">Surgicals</a></li>
-                    <li><a href="#">Nutraceuticals</a></li>
-                    <li><a href="#">Respiratory Solutions</a></li>
+                    <li><a href="pages/allopathic">Allopathic Medicine</a></li>
+                    <li><a href="pages/ayurvedic">Ayurvedic Medicine</a></li>
+                    <li><a href="pages/pharmacy">Pharmacy</a></li>
+                    <li><a href="pages/disposals">Disposables</a></li>
+                    <li><a href="pages/surgicals">Surgicals</a></li>
+                    <li><a href="pages/neu">Nutraceuticals</a></li>
+                    <li><a href="pages/resp">Respiratory Solutions</a></li>
                     <li class="has-children">
                       <a href="#">ORTHOPAEDIC SOFT GOODS & REHABILITATION AIDS</a>
                       <ul class="dropdown">
 
-                        <li><a href="#">Neoprene Products</a></li>
-                        <li><a href="#">Body Belts and Support</a></li>
-                        <li><a href="#">Cervical Aids</a></li>
-                        <li><a href="#">Fracture Aids</a></li>
-                        <li><a href="#">Knee and Ankle Support</a></li>
-                        <li><a href="#">Finger and Thumb Splint</a></li>
-                        <li><a href="#">Traction Kit</a></li>
-                        <li><a href="#">Wrist and Forearm Products</a></li>
-                        <li><a href="#">Allplied Products</a></li>
-                        <li><a href="#">Gel and Silicon Products</a></li>
+                        <li><a href="pages/neo">Neoprene Products</a></li>
+                        <li><a href="pages/belt">Body Belts and Support</a></li>
+                        <li><a href="pages/cerv">Cervical Aids</a></li>
+                        <li><a href="pages/frac">Fracture Aids</a></li>
+                        <li><a href="pages/knee">Knee and Ankle Support</a></li>
+                        <li><a href="pages/fing">Finger and Thumb Splint</a></li>
+                        <li><a href="pages/trac">Traction Kit</a></li>
+                        <li><a href="pages/wri">Wrist and Forearm Products</a></li>
+                        <li><a href="pages/app">Allplied Products</a></li>
+                        <li><a href="pages/gel">Gel and Silicon Products</a></li>
                         <li><a href="#">3D Sporty Kneep Cap</a></li>
 
                       </ul>
                     </li>
-                    <li><a href="#">Diagnostic</a></li>
-                    <li><a href="#">Catheter/Canula</a></li>
-                    <li><a href="#">IV Fluids</a></li>
+                    <li><a href="pages/diag">Diagnostic</a></li>
+                    <li><a href="pages/cath">Catheter/Canula</a></li>
+                    <li><a href="pages/fluid">IV Fluids</a></li>
                     <li><a href="#">Cosmatic</a></li>
                     <li><a href="#">Anti Cancer Drugs</a></li>
                     <li><a href="#">Hormonal Drugs</a></li>
@@ -81,8 +82,8 @@
 
                   </ul>
                 </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="query/contact">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -94,7 +95,7 @@
       </div>
     </div>
 
-    <div class="site-blocks-cover inner-page" style="background-image: url('images/cover2.jpg');">
+    <div class="site-blocks-cover inner-page" style="background-image: url('{% static 'images/cover2.jpg' %}');">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 mx-auto align-self-center">
@@ -113,7 +114,7 @@
           <div class="col-md-6">
             <div class="block-16">
               <figure>
-                <img src="images/bg_2.jpg" alt="Image placeholder" class="img-fluid rounded">
+                <img src="{% static 'images/bg_2.jpg' %}" alt="Image placeholder" class="img-fluid rounded">
                 
               </figure>
             </div>
@@ -154,7 +155,7 @@
           <div class="col-md-6 order-md-2">
             <div class="block-16">
               <figure>
-                <img src="images/manufacturing.jpg" alt="Image placeholder" class="img-fluid rounded">
+                <img src="{% static 'images/manufacturing.jpg' %}" alt="Image placeholder" class="img-fluid rounded">
               </figure>
             </div>
           </div>
@@ -199,7 +200,7 @@
           <div class="col-md-6">
             <div class="block-16">
               <figure>
-                <img src="images/group.jpg" alt="Image placeholder" class="img-fluid rounded">
+                <img src="{% static 'images/group.jpg' %}" alt="Image placeholder" class="img-fluid rounded">
                 
               </figure>
             </div>
@@ -228,7 +229,7 @@
           <div class="col-md-6 order-md-2">
             <div class="block-16">
               <figure>
-                <img src="images/whatsapp.jpeg" alt="Image placeholder" class="img-fluid rounded">
+                <img src="{% static 'images/whatsapp.jpeg' %}" alt="Image placeholder" class="img-fluid rounded">
               </figure>
             </div>
           </div>
@@ -269,10 +270,10 @@
           <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
             <h3 class="footer-heading mb-4">Quick Links</h3>
             <ul class="list-unstyled">
-              <li><a href="#">Ayurvedic Medicines</a></li>
-              <li><a href="#">Allopathic Medicines</a></li>
-              <li><a href="#">Surgicals</a></li>
-              <li><a href="#">Disposables</a></li>
+              <li><a href="pages/ayurvedic">Ayurvedic Medicines</a></li>
+              <li><a href="pages/allopathic">Allopathic Medicines</a></li>
+              <li><a href="pages/surgicals">Surgicals</a></li>
+              <li><a href="pages/disposals">Disposables</a></li>
             </ul>
           </div>
 
