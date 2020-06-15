@@ -1147,7 +1147,8 @@ a {
 }
 .inside1 {
     padding-top: 5%;
-    padding-left: 30%;
+    padding-left: 18%;
+    padding-right: 10%;
     font-weight: bold;
     font-size: larger;
     background-color: #7B68EE;
@@ -1157,7 +1158,8 @@ a {
 }
 .inside2 {
   padding-top: 5%;
-  padding-left: 30%;
+  padding-left: 18%;
+  padding-right: 10%;
   font-weight: bold;
   font-size: larger;
   background-color:#87CEFA ;
@@ -1168,6 +1170,7 @@ a {
 .inside3 {
   padding-top: 5%;
   padding-left: 18%;
+  padding-right: 10%;
   font-weight: bold;
   font-size: larger;
   background-color:    #9370DB;
@@ -1178,7 +1181,8 @@ a {
 }
 .inside4 {
   padding-top: 5%;
-  padding-left: 30%;
+  padding-left: 18%;
+  padding-right: 10%;
   font-weight: bold;
   font-size: larger;
   background-color:#48D1CC;
