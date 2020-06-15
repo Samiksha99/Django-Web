@@ -1,93 +1,132 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+  <title>>CATHETER/CANULA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
-    <link rel="stylesheet" href="{% static 'css/fixed.css' %}">
-    <title>CERVICAL AIDS </title>
-  </head>
-  <body data-spy="scroll" data-target="#navebarResponsive">
-      <!-- home section start -->
-    <div id="home">
-        <nav class="navbar navbar-expand md navbar-dark bg-dark fixed-top" >
-            <a class="navbar-brand" href="#"><img src="{% static 'img/RIZO-CHEM.png' %}"></a>
-            <i class="fa fa-facebook-official" style="font-size:36px;color:white"></i>
-            <i class="fa fa-github-square" style="font-size:36px;color:white"></i>
-            <i class="fa fa-instagram" style="font-size:36px;color:white"></i>
-            <i class="fa fa-linkedin-square" style="font-size:36px;color:white"></i>
-            <i class="fa fa-google" style="font-size:36px;color:white"></i>
-            <i class="fa fa-twitter" style="font-size:36px;color:white"></i>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navebarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navebarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                        </li>
-                       
-                            <li class="nav-item">
-                              <div class="dropdown">
-                                <a class="nav-link" href="#products">Products</a>
-                                <div class="dropdown-content">
-                                  <a href="allopathic">Allopathic Medicines</a>
-                                  <a href="ayurvedic">Ayurvedic Medicines</a>
-                                  <a href="pharmacy">Pharmacy</a>
-                                  <a href="disposals">Disposables</a>
-                                  <a href="surgicals">Surgicals</a>
-                                  <a href="neu">NUTRACEUTICALS</a>
-                                  <a href="resp">Respiratory Solutions</a>
-                                  <a href="orth">ORTHOPAEDIC SOFT GOODS & REHABILITATION AIDS</a>
-                                  <a href="diag">DIAGNOSTIC</a>
-                                  <a href="cath">CATHETER/CANULA</a>
-                                  <a href="fluid">IV FLUIDS</a>
-                                  <a href="#">COSMATIC</a>
-                                  <a href="#">ANTI CANCER DRUGS</a>
-                                  <a href="#">HORMONAL DRUGS</a>
-                                  <a href="#">HERBAL DRUGS</a>
-                                </div>
-                              </div>
-                              
-                              </li>
-                            
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact Us</a>
-                                    </li>
-                                    </ul>
-                                    </div>
-                                  </nav>
-                                  <style>
-                                    .dropdown-content {
-                                      background-color: aquamarine;
-                                    }
-                                    .dropdown-content a {
-                                      padding: 3px 5px;
-                                      border: solid 1px black;
-                                    }   
-                                  </style> 
-                                  <!-- main content start -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 
-                                      <h1 class="nexthead">CERVICAL AIDS </h1>
-                                      {% for cerv in cervi %}
-                                            <div class="row">
-                                                <div class="col-lg">
-                                                    <p class="inside1">{{cerv.item1}}</p>
-                                                </div>
-                                                <div class="col-lg">
-                                                    <p class="inside2">{{cerv.item2}}</p>
-                                                </div>
-                                                <div class="col-lg">
-                                                    <p class="inside3">{{cerv.item3}}</p>
-                                                </div>
-                                                <div class="col-lg">
-                                                    <p class="inside4">{{cerv.item4}}</p>
-                                                </div>
-                                              </div>
-                                      {% endfor %} 
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+
+  <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+  <div class="site-wrap">
+
+
+    <div class="site-navbar py-2">
+
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <div class="site-logo">
+              <a href="#" class="js-logo-clone"><img src="{% static 'images/RIZO-CHEM.png' %}"></a>
+            </div>
+          </div>
+          <div class="main-nav d-none d-lg-block">
+            <nav class="site-navigation text-right text-md-center" role="navigation">
+              <ul class="site-menu js-clone-nav d-none d-lg-block">
+                <li class="active"><a href="/">Home</a></li>
+
+                <li class="has-children">
+                  <a href="#">Products</a>
+                  <ul class="dropdown">
+                    <li><a href="allopathic">Allopathic Medicine</a></li>
+                    <li><a href="ayurvedic">Ayurvedic Medicine</a></li>
+                    <li><a href="pharmacy">Pharmacy</a></li>
+                    <li><a href="disposals">Disposables</a></li>
+                    <li><a href="surgicals">Surgicals</a></li>
+                    <li><a href="neu">Nutraceuticals</a></li>
+                    <li><a href="resp">Respiratory Solutions</a></li>
+                    <li class="has-children">
+                      <a href="#">ORTHOPAEDIC SOFT GOODS & REHABILITATION AIDS</a>
+                      <ul class="dropdown">
+
+                        <li><a href="neo">Neoprene Products</a></li>
+                        <li><a href="belt">Body Belts and Support</a></li>
+                        <li><a href="cerv">Cervical Aids</a></li>
+                        <li><a href="frac">Fracture Aids</a></li>
+                        <li><a href="knee">Knee and Ankle Support</a></li>
+                        <li><a href="fing">Finger and Thumb Splint</a></li>
+                        <li><a href="trac">Traction Kit</a></li>
+                        <li><a href="wri">Wrist and Forearm Products</a></li>
+                        <li><a href="app">Allplied Products</a></li>
+                        <li><a href="gel">Gel and Silicon Products</a></li>
+                        <li><a href="#">3D Sporty Kneep Cap</a></li>
+
+                      </ul>
+                    </li>
+                    <li><a href="diag">Diagnostic</a></li>
+                    <li><a href="cath">Catheter/Canula</a></li>
+                    <li><a href="fluid">IV Fluids</a></li>
+                    <li><a href="#">Cosmatic</a></li>
+                    <li><a href="#">Anti Cancer Drugs</a></li>
+                    <li><a href="#">Hormonal Drugs</a></li>
+                    <li><a href="#">Herbal Drugs</a></li>
+
+                  </ul>
+                </li>
+            
+              </ul>
+            </nav>
+          </div>
+          <div class="icons">
+            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
+                class="icon-menu"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="nexthead">CERVICAL AIDS </h1>
+    {% for cerv in cervi %}
+          <div class="row">
+              <div class="col-lg">
+                  <p class="inside1">{{cerv.item1}}</p>
+              </div>
+              <div class="col-lg">
+                  <p class="inside2">{{cerv.item2}}</p>
+              </div>
+              <div class="col-lg">
+                  <p class="inside3">{{cerv.item3}}</p>
+              </div>
+              <div class="col-lg">
+                  <p class="inside4">{{cerv.item4}}</p>
+              </div>
+            </div>
+    {% endfor %} 
+
+    
+  
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+  
+    <script src="js/main.js"></script>
+  
+  </body>
+  
+  </html>
+
+
+                                              
