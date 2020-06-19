@@ -1,5 +1,7 @@
 # deployapp
 
+To check out click on www.rizocheminternational.in
+
 **Getting Started**
 
 **Prerequisites:**
