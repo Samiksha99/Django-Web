@@ -19,6 +19,25 @@ from . models import wrists
 from . models import dias
 from . models import cathes
 from . models import flus
+from . models import bloods
+from . models import bps
+from . models import cleans
+from . models import capss
+from . models import clothss
+from . models import dialys
+from . models import fums
+from . models import glovess
+from . models import googless
+from . models import icus
+from . models import masks
+from . models import oxys
+from . models import pmss
+from . models import sans
+from . models import shoes
+from . models import sucs
+from . models import syringes
+from . models import vents
+from . models import pulses
 # Register your models here.
 
 admin.site.register(allos)
