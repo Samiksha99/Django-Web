@@ -122,6 +122,121 @@ class cathes(models.Model):
     item4 = models.CharField(max_length=100,null=True,blank=True)
 
 
+class bloods(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class bps(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class capss(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class cleans(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class clothss(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class dialys(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class fums(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)    
+
+class glovess(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class googless(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class icus(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class masks(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class oxys(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class pmss(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class pulses(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class sans(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class shoes(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class sucs(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class syringes(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
+
+class vents(models.Model):
+    item1 = models.CharField(max_length=100,null=True)
+    item2 = models.CharField(max_length=100,null=True,blank=True)
+    item3 = models.CharField(max_length=100,null=True,blank=True)
+    item4 = models.CharField(max_length=100,null=True,blank=True)
 
 
-    
+
+
+        
