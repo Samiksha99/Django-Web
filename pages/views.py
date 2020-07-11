@@ -19,6 +19,26 @@ from . models import wrists
 from . models import cathes
 from . models import dias
 from . models import flus
+from . models import bloods
+from . models import bps
+from . models import capss
+from . models import cleans
+from . models import clothss
+from . models import dialys
+from . models import fums
+from . models import glovess
+from . models import googless
+from . models import icus
+from . models import masks
+from . models import oxys
+from . models import pmss
+from . models import pulses
+from . models import sans
+from . models import shoes
+from . models import sucs
+from . models import syringes
+from . models import vents
+
 # Create your views here.
 
 def orth(request):
@@ -120,6 +140,101 @@ def diag(request):
 def fluid(request):
     flu = flus.objects.all()
     return render(request, "fluid.html",{'flu' : flu})
+
+
+def blood(request):
+    bloo = bloods.objects.all()
+
+    return render(request, "blood.html", {'bloo': bloo})
+
+def bp(request):
+    bpress = bps.objects.all()
+
+    return render(request, "bp.html", {'bpress': bpress})
+
+def cap(request):
+    caps = capss.objects.all()
+
+    return render(request, "cap.html", {'caps': caps})
+
+def clean(request):
+    clean = cleanss.objects.all()
+
+    return render(request, "clean.html", {'clean': clean})
+
+def cloth(request):
+    cloths = clothss.objects.all()
+
+    return render(request, "cloth.html", {'cloths': cloths})
+
+def dialysis(request):
+    dialy = dialys.objects.all()
+
+    return render(request, "dialysis.html", {'dialy': dialy})
+
+def fum(request):
+    fum = fums.objects.all()
+
+    return render(request, "fum.html", {'fum': fum})
+
+def gloves(request):
+    gloves = glovess.objects.all()
+
+    return render(request, "gloves.html", {'gloves': gloves})
+
+def googles(request):
+    googles = googless.objects.all()
+
+    return render(request, "googles.html", {'googles': googles})
+
+def icu(request):
+    icu = icus.objects.all()
+
+    return render(request, "icu.html", {'icu': icu})
+
+def mask(request):
+    mask = masks.objects.all()
+
+    return render(request, "mask.html", {'mask': mask})
+
+def oxy(request):
+    oxy = oxys.objects.all()
+
+    return render(request, "oxy.html", {'oxy': oxy})
+
+def pms(request):
+    pms = pmss.objects.all()
+
+    return render(request, "pms.html", {'pms': pms})
+
+def pulse(request):
+    pulse = pulses.objects.all()
+
+    return render(request, "pulse.html", {'pilse': pulse})
+
+def san(request):
+    san = sans.objects.all()
+
+    return render(request, "san.html", {'san': san})
+
+def shoe(request):
+    shoe = shoes.objects.all()
+
+    return render(request, "shoe.html", {'shoe': shoe})
+
+def suc(request):
+    suc = sucs.objects.all()
+
+    return render(request, "suc.html", {'suc': suc})
+
+def Syringe(request):
+    syringe = syringes.objects.all()
+    return render(request, "Syringe.html",{'syringe' : syringe})
+
+def vent(request):
+    vent = vents.objects.all()
+    return render(request, "vent.html",{'vent' : vent})
+
 
 
 
