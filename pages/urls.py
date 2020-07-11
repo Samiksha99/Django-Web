@@ -23,6 +23,26 @@ urlpatterns = [
     path('diag',views.diag, name='diag'),
     path('cath',views.cath, name='cath'),
     path('fluid',views.fluid, name='fluid'),
+    path('blood',views.blood, name='blood'),
+    path('bp',views.bp, name='bp'),
+    path('cap',views.cap, name='cap'),
+    path('clean',views.clean, name='clean'),
+    path('cloth',views.cloth, name='cloth'),
+    path('dialysis',views.dialysis, name='dialysis'),
+    path('fum',views.fum, name='fum'),
+    path('gloves',views.gloves, name='gloves'),
+    path('googles',views.googles, name='googles'),
+    path('icu',views.icu, name='icu'),
+    path('mask',views.mask, name='mask'),
+    path('oxy',views.oxy, name='oxy'),
+    path('pms',views.pms, name='pms'),
+    path('pulse',views.pulse, name='pulse'),
+    path('san',views.san, name='san'),
+    path('shoe',views.shoe, name='shoe'),
+    path('suc',views.suc, name='suc'),
+    path('Syringe',views.Syringe, name='Syringe'),
+    path('vent',views.vent, name='vent'),
+
     
     
 ]
